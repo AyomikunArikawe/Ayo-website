@@ -25,7 +25,7 @@
         <ul>
           <li><a href="#welcomenote">intoduction</a></li>
           <li><a href="#moreinfo">details about the author</a></li>
-          <li><a href="#country-list">countries</a></li>
+          <li><a href="#quick-quiz">quick-quiz</a></li>
         </ul>
       </nav>
       <hr />
@@ -153,17 +153,153 @@
     </ul>
 
     <hr />
+    <section>
+      <h4>Places i would love to visit</h4>
+      <dl>
+        <dt>South Africa</dt>
+        <dd>They have very <em> beautiful</em> women</dd>
+        <dt>The Maldives</dt>
+        <dd>it is a very beautiful island</dd>
+        <dt>Canada</dt>
+        <dd>Many people i know reside there</dd>
+      </dl>
+    </section>
+    <hr />
+    <section id="quick-quiz">
+      <h4>Random questions</h4>
+      <form action="https://httpbin.org/get" method="get">
+        <ul>
+          <li>
+            <label for="countries">Which one is an African country</label>
+            <input
+              type="text"
+              name="Africancountry"
+              id="countries"
+              list="countrylist"
+            />
+            <datalist id="countrylist">
+              <option value="Canada"></option>
+              <option value="France"></option>
+              <option value="Australia"></option>
+              <option value="Uganda"></option>
+            </datalist>
+          </li>
+          <li>
+            <label for="southernafricancountry"
+              >which one is a southern african country</label
+            >
+            <input id="southernafricancountry" list="countries-list" />
+            <datalist id="countries-list">
+              <option value="Nigeria">Nigeria</option>
+              <option value="Benin">Benin</option>
+              <option value="Cameroon">Cameroon</option>
+              <option value="Botswana">Botswana</option>
+            </datalist>
+          </li>
+        </ul>
+        <fieldset>
+          <legend>What is your favorite food</legend>
+          <p>
+            <input type="radio" name="Food" id="beans" value="beans" />
+            <label for="beans">beans</label>
+          </p>
+          <p>
+            <input type="radio" name="Food" id="rice" value="rice" />
+            <label for="rice">rice</label>
+          </p>
+          <p>
+            <input type="radio" name="Food" id="Bread" value="Bread" />
+            <label for="Bread">Bread</label>
+          </p>
+          <p>
+            <input type="radio" name="Food" id="yam" value="yam" />
+            <label for="yam"><i>Yam</i></label>
+          </p>
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>Do you have pets</legend>
+          <p>
+            <input type="radio" name="response" id="Yes" value="yes" />
+            <label for="Yes">Yes</label>
+          </p>
+          <p>
+            <input type="radio" name="response" id="No" value="No" />
+            <label for="No">No</label>
+          </p>
+          <p>
+            <input
+              type="radio"
+              name="response"
+              id="neverhad"
+              value="neverhad"
+            />
+            <label for="neverhad">never had</label>
+          </p>
+          <p>
+            <input
+              type="radio"
+              name="response"
+              id="notanymore"
+              value="notanymore"
+            />
+            <label for="notanymore">not anymore</label>
+          </p>
+        </fieldset>
 
-    <h4>Places i would love to visit</h4>
-    <dl>
-      <dt>South Africa</dt>
-      <dd>They have very <em> beautiful</em> women</dd>
-      <dt>The Maldives</dt>
-      <dd>it is a very beautiful island</dd>
-      <dt>Canada</dt>
-      <dd>Many people i know reside there</dd>
-    </dl>
+        <fieldset>
+          <legend>Which of these games have you played</legend>
+          <p>
+            <input type="checkbox" name="games" id="Fifa18" value="Fifa18" />
+            <label for="Fifa18">Fifa 18</label>
+          </p>
+          <p>
+            <input
+              type="checkbox"
+              name="games"
+              id="eFootball24"
+              value="eFootball24"
+              
+            />
+            <label for="eFootball24">eFootball 24</label>
+          </p>
+          <p>
+            <input
+              type="checkbox"
+              name="games"
+              id="Mortalkombat"
+              value="Mortalkombat"
+            />
+            <label for="Mortalkombat">Mortal kombat</label>
+          </p>
+          <p>
+            <input type="checkbox" name="games" id="GTA5" value="GTA5" />
+            <label for="GTA5">GTA 5</label>
+          </p>
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>leave me a note!</legend>
+          <label for="message">Your message:</label>
 
+          <br />
+          <p>
+            <textarea
+              name="message"
+              id="message"
+              cols="60"
+              rows="15"
+              autofocus
+              placeholder="Leave a message here!"
+            ></textarea>
+          </p>
+        </fieldset>
+        <p>
+          <button type="reset">reset</button>
+          <button type="submit">submit</button>
+        </p>
+      </form>
+    </section>
     <hr />
     <a href="#">back to top</a>
     <hr />
